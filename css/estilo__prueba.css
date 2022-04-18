@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: orange;
+}
+.contenedor__prueba{
+    display: flex;
+    background-color: blueviolet;
+    width: 100vw;
+    height: 100%;
+    justify-content: end;
+}
+
+.redes {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    background-color: yellow;
+    transition: 1s;
+    display: flex;
+    justify-content: end;
+}
+
+.redes div .redes--icono{
+    width: 48px;
+    height: 48px;
+}
+  .redes--active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .1s; }
+  
+  .redes--facebook {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s; }
+  
+    
+  .redes--github {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s; }
+  
+    
+  .redes--instagram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s; }
+
+    .redes:hover .redes--active{
+    opacity: 1; 
+    transform: translate(0px)}
+    .redes:hover .redes--facebook{
+        opacity: 1; 
+        transform: translate(55px)}
+    .redes:hover .redes--github{
+        opacity: 1; 
+        transform: translate(105px);
+        }
+    .redes:hover .redes--instagram {
+        opacity: 1; 
+    transform: translate(160px);}
+
+  .redes:hover{
+    width:300px;}
+  
+  /* FIN PRUEBA LISTA ICONOS REDES */

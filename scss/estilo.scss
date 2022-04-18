@@ -1,11 +1,66 @@
+/*
+novedades: #263b26;
+color-primario:#a7ca74;
+color-secundario:#6a7a2a;
+color-primario--alfa:#a7ca7422;
+color-secundario--alfa:#6a7a2a44;
+color-background: #f7fcf0;
+
+
+
+
+/* PRUEBA LISTA ICONOS REDES */
+
+.redes {
+  width: 480px;
+  height: 48px;
+  position: relative;
+  background-color: #263b26;
+}
+.redes--active {
+  position: relative;  
+  top: 0;  
+  left: 0;
+  opacity: 0;
+  transition: .1s;
+}
+.redes--active2 {
+  position: absolute;  
+  top: 0;  
+  left: 0px;
+  display: none;
+  transition: 1s;
+}
+
+.redes:hover .redes--active {
+  opacity: 1;
+}
+.redes:hover .redes--active2{
+  transform: translate(-60px);
+  display: block;
+}
+.redes--active:hover .redes{
+  transform: scaleX(10);
+  display: flex;
+}
+
+/* FIN PRUEBA LISTA ICONOS REDES */
+
+
+
+
 /*--------------- VARIABLES ---------------*/
 /*---Colores---*/
 $color-primario:#a7ca74;
 $color-secundario:#6a7a2a;
+$color-primario--alfa:#a7ca7422;
+$color-secundario--alfa:#6a7a2a44;
 $color-background: #f7fcf0;
+$color-novedades: #263b26;
+
 /*---Fuentes---*/
-$fuente-primaria:'Roboto Mono', cursive;
-$fuente-secundaria: 'Supermercado One', cursive;
+$fuente-primaria:'Roboto Mono', monospace;
+$fuente-secundaria: 'Supermercado One', monospace;
 
 
 /*------------- FIN VARIABLES -------------*/
@@ -24,7 +79,7 @@ html {
   
 body {
     font-family: $fuente-primaria;
-    background-color: #f7fcf0;
+    background-color: $color-background;
     height: 100%;
 }
   
@@ -55,7 +110,6 @@ body {
 }
 .ico3 {
     margin-left: 0.8rem;
-    color: #a7ca74;
 }
   
   
@@ -102,52 +156,49 @@ main p {
   .header {
     grid-area: header;
     height: 100%;
-    background-color: #a7ca74;
+    background-color: $color-primario;
     text-align: center;
     &--principal {
         display: flex;
         height: 90%;
         width: 100%;
-        background-color: #a7ca74;}
+        background-color: $color-primario;}
     &__columna1 {
-            width: 12rem;
-            height: 80%;}
+        width: 12rem;
+        height: 80%;}
     &__columna2 {
-            width: 17rem;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: $fuente-secundaria;}
+        width: 17rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $fuente-secundaria;}
     &__columna3 {
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: 100%;
-            padding-right: 30px;
-            flex-grow: 2;}
-    &__columna3 div {
-            display: flex;
-            width: 100%;
-            justify-content: flex-end;}    
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+        height: 100%;
+        padding-right: 30px;
+        flex-grow: 2;
+        }
     &__search {
-    width: 7rem;
-    right: 3rem;
-    border-radius: 1px;
-    top: 11em;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out to left;
-    position: absolute;
+        width: 7rem;
+        right: 3rem;
+        border-radius: 1px;
+        top: 11em;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out to left;
+        position: absolute;
     &:hover{
         width: 25em;}}  
     }
 .novedades {
-    background-color: rgb(38, 59, 38);
+    background-color: $color-novedades;
     font-size: 0.8rem;
     height: 10%;
     display: flex;
     justify-content: center;
-    color: #a7ca74;
+    color: $color-primario;
     width: 100vw;
 }
 .logo {
@@ -170,7 +221,7 @@ main p {
   /*-------------------------------- NAVEGADOR ----------------------------------- */
 .navegador {
     grid-area: navegador;
-    border: #a7ca74;
+    border: $color-primario;
     background-color: gray;
     a{
         text-decoration: none;
@@ -194,8 +245,9 @@ main p {
               background: rgb(218, 243, 118);}}
       &--responsive {
           display: none;
-          li:hover {
-          background-color: #18832f79;}}}
+          li{
+            &:hover {
+              background-color: $color-secundario--alfa;}}}}
 }
 /* NAVEGADOR RESPONSIVE*/
 .fa-bars {
@@ -210,11 +262,11 @@ main p {
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-small;
-    color: #a7ca74;
+    color: $color-primario;
     height: auto;
     &--principal {
         display: flex;
-        color: #a7ca74;
+        color: $color-primario;
         width: 100%;
         font-family: 'Times New Roman', Times, serif;
         font-size: 0.6rem;}
@@ -222,7 +274,7 @@ main p {
         grid-area: footer--inferior;
         display: flex;
         color: #d2e0bd;
-        background-color: #a7ca7422;
+        background-color: $color-primario--alfa;
         width: 100%;
         height: 2rem;
         font-family: 'Times New Roman', Times, serif;
@@ -231,7 +283,7 @@ main p {
         align-items: center;}
         a{
             &:visited {
-            color: #a7ca74;
+            color: $color-primario;
             text-decoration: none;}
             &:hover {
             color: red;
@@ -240,7 +292,7 @@ main p {
             color: #dfc;
             text-decoration: none;}
             &:link {
-            color: #a7ca74;
+            color: $color-primario;
             text-decoration: none;}}
     &__columna--izquierda {
       text-align: justify;
@@ -335,7 +387,7 @@ a {
     text-transform: uppercase;
   }
   .subtitulo {
-    color: rgb(97, 112, 38);
+    color: $color-secundario;
 
     font-size: 1.5em;
     font-family: $fuente-secundaria;
@@ -366,7 +418,7 @@ a {
     margin-bottom: 1em;
   }
   .noticia {
-    background-color: #a7ca7444;
+    background-color: $color-primario--alfa;
     margin-bottom: 3em;
   }
   .resumen--noticia {
@@ -439,20 +491,20 @@ a {
   }
   .fila--superior {
     grid-area: fila1;
-    background-color: #a7ca74;
+    background-color: $color-primario;
     display: flex;
     justify-content: space-around;
   }
   .articulo1 {
     grid-area: articulo1;
-    background-color: #a7ca7422;
+    background-color: $color-primario--alfa;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
   .articulo2 {
     grid-area: articulo2;
-    background-color: #a7ca7422;
+    background-color: $color-primario--alfa;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -494,10 +546,10 @@ a {
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid #a7ca74;
+    border: 2px solid $color-primario;
     margin-top: 0.5em;
     &:hover {
-      background-color: #a7ca74;
+      background-color: $color-primario;
       color: white;}
     &--finalizar {
       width: 90%;
@@ -531,11 +583,8 @@ a {
         font-family: monospace;
         width: 10em;
         li {
-          padding: 0.2em 0.6em 0.2em 0;
-      }
+          padding: 0.2em 0.6em 0.2em 0;}
     }
-
-    .navegador__menu--responsive 
     .fa-solid:hover .navegador__menu--responsive {
         display: block;
         right: 0;
@@ -636,23 +685,14 @@ a {
   
   @media (min-width:670.1px) and (max-width:800px) {
     .titulo--logo {
-        text-align: left;
-    }
+        text-align: left;}
     .subtitulo--logo {
-        text-align: left;
-    }
+        text-align: left;}
     .main--verCarrito {
-        flex-direction: column;
-    }
+        flex-direction: column;}
     .columna--izquierda {
         width: auto;
-        height: auto;
-    }
-    .columna--derecha {
-        height: auto;
-        background-color: rgba(218, 243, 118, 0.7);
-        width: auto;
-    }
+        height: auto;}
   }
   
   @media screen and (max-width:600px) {
@@ -663,6 +703,7 @@ a {
   }
   
   @media screen and (max-width:800px) {
+
     .grid__carrito {
         /* modifico la grilla para que el resumen quede abajo */
         display: grid;
@@ -693,6 +734,12 @@ a {
   }
   
   @media screen and (max-width:800px) {
+    .navegador__menu li{
+      font-size: 0.85em; 
+    } 
+    .centrado{
+      align-items: center;
+    }
     .grid--noticias {
         justify-content: center;
         display: grid;
@@ -700,4 +747,5 @@ a {
         gap: 3em;
         grid-template-areas: "columna1" "columna2" "columna3";
     }
+
   }

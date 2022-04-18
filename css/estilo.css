@@ -1,3 +1,47 @@
+/*
+novedades: #263b26;
+color-primario:#a7ca74;
+color-secundario:#6a7a2a;
+color-primario--alfa:#a7ca7422;
+color-secundario--alfa:#6a7a2a44;
+color-background: #f7fcf0;
+
+
+
+
+/* PRUEBA LISTA ICONOS REDES */
+.redes {
+  width: 480px;
+  height: 48px;
+  position: relative;
+  background-color: #263b26; }
+
+.redes--active {
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .1s; }
+
+.redes--active2 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: none;
+  transition: 1s; }
+
+.redes:hover .redes--active {
+  opacity: 1; }
+
+.redes:hover .redes--active2 {
+  transform: translate(-60px);
+  display: block; }
+
+.redes--active:hover .redes {
+  transform: scaleX(10);
+  display: flex; }
+
+/* FIN PRUEBA LISTA ICONOS REDES */
 /*--------------- VARIABLES ---------------*/
 /*---Colores---*/
 /*---Fuentes---*/
@@ -14,7 +58,7 @@ html {
   width: 100%; }
 
 body {
-  font-family: "Roboto Mono", cursive;
+  font-family: "Roboto Mono", monospace;
   background-color: #f7fcf0;
   height: 100%; }
 
@@ -40,8 +84,7 @@ body {
     position: absolute; }
 
 .ico3 {
-  margin-left: 0.8rem;
-  color: #a7ca74; }
+  margin-left: 0.8rem; }
 
 /* GRID --------------------------------------------------------------------------------*/
 .grid__container {
@@ -99,18 +142,14 @@ main p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Supermercado One", cursive; }
+    font-family: "Supermercado One", monospace; }
   .header__columna3 {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
     width: auto;
     height: 100%;
     padding-right: 30px;
     flex-grow: 2; }
-  .header__columna3 div {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end; }
   .header__search {
     width: 7rem;
     right: 3rem;
@@ -175,7 +214,7 @@ main p {
     .navegador__menu--responsive {
       display: none; }
       .navegador__menu--responsive li:hover {
-        background-color: #18832f79; }
+        background-color: #6a7a2a44; }
 
 /* NAVEGADOR RESPONSIVE*/
 .fa-bars {
@@ -309,13 +348,13 @@ h4 {
   color: #617026;
   text-align: center;
   font-size: 2em;
-  font-family: "Supermercado One", cursive;
+  font-family: "Supermercado One", monospace;
   text-transform: uppercase; }
 
 .subtitulo {
-  color: #617026;
+  color: #6a7a2a;
   font-size: 1.5em;
-  font-family: "Supermercado One", cursive; }
+  font-family: "Supermercado One", monospace; }
 
 /* NOTICIAS --------------------------------------------------*/
 .main--noticias {
@@ -343,7 +382,7 @@ h4 {
   margin-bottom: 1em; }
 
 .noticia {
-  background-color: #a7ca7444;
+  background-color: #a7ca7422;
   margin-bottom: 3em; }
 
 .resumen--noticia {
@@ -500,8 +539,7 @@ h4 {
     width: 10em; }
     .navegador__menu--responsive li {
       padding: 0.2em 0.6em 0.2em 0; }
-  .navegador__menu--responsive
-.fa-solid:hover .navegador__menu--responsive {
+  .fa-solid:hover .navegador__menu--responsive {
     display: block;
     right: 0;
     text-align: right; }
@@ -581,11 +619,7 @@ h4 {
     flex-direction: column; }
   .columna--izquierda {
     width: auto;
-    height: auto; }
-  .columna--derecha {
-    height: auto;
-    background-color: rgba(218, 243, 118, 0.7);
-    width: auto; } }
+    height: auto; } }
 
 @media screen and (max-width: 600px) {
   .seiscientos {
@@ -618,6 +652,10 @@ h4 {
     /* cambio el orden para que aparezca la imagen de Betty sobre el texto */ } }
 
 @media screen and (max-width: 800px) {
+  .navegador__menu li {
+    font-size: 0.85em; }
+  .centrado {
+    align-items: center; }
   .grid--noticias {
     justify-content: center;
     display: grid;
