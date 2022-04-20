@@ -5,75 +5,66 @@
 }
 body{
     width: 100%;
-    background-color: orange;
 }
 .contenedor__prueba{
     display: flex;
-    background-color: blueviolet;
     width: 100vw;
     height: 100%;
     justify-content: end;
 }
-
 .redes {
     width: 48px;
     height: 48px;
     position: relative;
-    background-color: yellow;
     transition: 1s;
     display: flex;
     justify-content: end;
 }
 
-.redes div .redes--icono{
-    width: 48px;
-    height: 48px;
-}
-  .redes--active {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: .1s; }
-  
   .redes--facebook {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: 1s; }
-  
-    
   .redes--github {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: 1s; }
-  
-    
   .redes--instagram {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: 1s; }
-
-    .redes:hover .redes--active{
-    opacity: 1; 
-    transform: translate(0px)}
+    transition: 1s;}
+  .redes--pinterest {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;}  
+    
+    .redes .redes--img .redes--img2{
+      display: none; }
+    .redes:hover .redes--img .redes--img1{
+      display: none;}
+    .redes:hover .redes--img .redes--img2{
+      display: block;}
     .redes:hover .redes--facebook{
         opacity: 1; 
-        transform: translate(55px)}
+        transform: translate(10.5em)}
     .redes:hover .redes--github{
         opacity: 1; 
-        transform: translate(105px);
-        }
+        transform: translate(7em);}
     .redes:hover .redes--instagram {
         opacity: 1; 
-    transform: translate(160px);}
-
+        transform: translate(3.5em);}
+    .redes:hover .redes--pinterest {
+        opacity: 1; 
+        transform: translate(0em);}
   .redes:hover{
-    width:300px;}
+    width:17em;}
   
   /* FIN PRUEBA LISTA ICONOS REDES */
