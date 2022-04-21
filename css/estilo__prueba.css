@@ -64,3 +64,226 @@
     width:17em;}
   */
   /* FIN PRUEBA LISTA ICONOS REDES */
+
+  /* NOTICIAS --------------------------------------------------*/
+
+  /*.main--noticias {
+  margin: 2em 2em;
+  padding: 0;
+}
+.grid--noticias {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+  grid-template-areas: "columna1 columna2 columna3";
+}
+.columna1 {
+  grid-area: columna1;
+}
+.columna2 {
+  grid-area: columna2;
+}
+.columna3 {
+  grid-area: columna3;
+}
+.imagen--noticia {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.noticia {
+  background-color: $color-primario--alfa;
+  margin-bottom: 3em;
+}
+.resumen--noticia {
+  padding: 0.5em;
+}
+
+/*
+
+  /* VER CARRITO -------------------------------------*/
+  /*
+  .grid__carrito {
+    display: grid;
+    grid-template-rows: 1em auto auto;
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: "fila1      fila1       fila1       fila1       resumen" "articulo1  articulo1   articulo1   articulo1   resumen" "articulo2  articulo2   articulo2   articulo2   resumen";
+    gap: 1em;
+    margin: 1em;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .fila--superior {
+    grid-area: fila1;
+    background-color: $color-primario;
+    display: flex;
+    justify-content: space-around;
+  }
+  .articulo1 {
+    grid-area: articulo1;
+    background-color: $color-primario--alfa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .articulo2 {
+    grid-area: articulo2;
+    background-color: $color-primario--alfa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .resumen {
+    grid-area: resumen;
+    background-color: lightgray;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    h4 {
+      text-align: left;
+    }
+  }
+  
+  .articulo__thumbnail {
+    width: 5em;
+    height: 5em;
+  }
+  
+  .cupon {
+    background-color: #545454;
+    padding: 0.2em 0.3em 0.2em 0.3em;
+    color: #ac5;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    margin: 1em 0 1em 0;
+  }
+  .button {
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin: 0.25em 0.125em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid $color-primario;
+    margin-top: 0.5em;
+    &:hover {
+        background-color: $color-primario;
+        color: white;}
+    &--finalizar {
+        width: 90%;
+        align-self: center;}
+    }*/
+/* ---------- FIN VER CARRITO ---------- */
+
+/* ---------- QUIENES SOMOS ---------- */
+/*
+.articulo__quienesSomos {
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 90%;
+  &--integrante {
+  display: flex;
+  }
+}
+.imagen__quienesSomos {
+  width: 100%;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.imagen--integrante {
+  width: 200%;
+  height: 200%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0rem 1rem 0rem 1rem;
+}
+/* ---------- FIN QUIENES SOMOS ---------- */
+ /* SECCION PRODUCTO.HTML */
+/*
+.producto {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 0;
+}
+.contenedor__producto {
+  margin: 2rem;
+  width: 17rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  &--img {
+      width: 18rem;
+      height: 18rem;
+      margin: 0rem;
+      border-radius: 100%;
+      display: flex;
+      overflow: hidden;}
+}
+h4 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: rgb(32, 75, 32);
+  text-transform: uppercase;
+  text-align: center;
+}
+.img__producto {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 100%;
+  transition: 0.5s;
+  &:hover {
+  scale: 1.1;}
+}
+.titulo {
+  color: rgb(97, 112, 38);
+  text-align: center;
+  font-size: 2em;
+  font-family: $fuente-secundaria;
+  text-transform: uppercase;
+}
+.subtitulo {
+  color: $color-secundario;
+  font-size: 1.5em;
+  font-family: $fuente-secundaria;
+}
+/* FIN SECCION PRODUCTO.HTML */
+/* UNETE A NOSOTROs -----------------------------------------*/
+/*
+.encabezado--formulario {
+  margin-top: 2rem;
+}
+.main--formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}
+.formulario {
+  margin-top: 2em;
+  height: 100%;
+  width: 20em;
+  background-color: rgba(106, 122, 42, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.botonera {
+  width: 30%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+.button--formulario {
+  padding: 0 !important;
+  margin: 0.5em !important; // Coloco  important para no tener que bajar esta sentencia y asi mantener ordenado el css
+}
+
+/* FIN UNETE A NOSOTROS -------------------------------------*/
