@@ -1,15 +1,8 @@
-/*
-novedades: #263b26;
-color-primario: ;
-color-secundario:#6a7a2a;
-color-primario--alfa:#a7ca7422;
-color-secundario--alfa:#6a7a2a44;
-color-background: #f7fcf0;
-
 /*--------------- VARIABLES ---------------*/
-/*---Colores---*/
-/*---Fuentes---*/
-/*------------- FIN VARIABLES -------------*/
+/* Colores */
+/* Fuentes */
+/*------------FIN VARIABLES-------------*/
+/*ESTILOS GENERALES*/
 * {
   margin: 0;
   padding: 0;
@@ -26,65 +19,13 @@ body {
   background-color: #f7fcf0;
   height: 100%; }
 
-/* LOGO e  ICONOS*/
-/*Iconos del Footer*/
-.ico {
-  width: 1.1rem;
-  height: 1.1rem;
-  border-radius: 100%; }
-  .ico--header {
-    width: 2rem;
-    height: 2rem;
-    margin: 1.2rem 1.2rem 4rem;
-    border-radius: 100%;
-    transition: 0.5s; }
-    .ico--header:hover {
-      scale: 1.3; }
-  .ico--search {
-    top: 9.3em;
-    width: 1.1em;
-    height: 1.1em;
-    right: 1em;
-    position: absolute; }
-
-.ico3 {
-  margin-left: 0.8rem; }
-
-/* GRID --------------------------------------------------------------------------------*/
+/*FIN ESTILOS GENERALES*/
+/*------------------- GRID LAYOUT -------------------*/
 .grid__container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 11em 1.3em auto 10em;
   grid-template-areas: 'header header header header header header' 'navegador navegador navegador navegador navegador navegador' 'main main main main main main' 'footer footer footer footer footer footer'; }
-
-/* MAIN */
-.main {
-  grid-area: main;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  padding-top: 2em;
-  padding-bottom: 2em; }
-  .main__seccion {
-    display: flex; }
-  .main__img--left {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 1rem;
-    margin-right: 4rem; }
-  .main__seccion img {
-    border: 10px;
-    /*border-color: red;*/
-    padding: 0; }
-  .main__img--right {
-    margin-left: 4rem;
-    right: 0;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 1rem; }
-
-main p {
-  text-align: justify;
-  text-overflow: inherit; }
 
 /* HEADER */
 .header {
@@ -125,64 +66,33 @@ main p {
     .header__search:hover {
       width: 25em; }
 
-.novedades {
-  background-color: #263b26;
-  font-size: 0.8rem;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  color: #a7ca74;
-  width: 100vw; }
-
-.logo {
-  margin: 0.8rem;
-  height: 8em;
-  width: 8em;
-  border-radius: 100%; }
-
-.titulo--logo {
-  font-size: 3rem;
-  color: #6a7a2a;
-  margin-top: 0.6em; }
-
-.subtitulo--logo {
-  font-size: 2rem;
-  color: #545454;
-  transform: translateX(0.8em); }
-
-/*-------------------------------- NAVEGADOR ----------------------------------- */
-.navegador {
-  grid-area: navegador;
-  border: #a7ca74;
-  background-color: gray; }
-  .navegador a {
-    text-decoration: none; }
-    .navegador a:visited {
-      color: #d9e2ca; }
-    .navegador a:hover {
-      color: green; }
-    .navegador a:active {
-      color: black; }
-    .navegador a:link {
-      color: #d9e2ca; }
-  .navegador__menu {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-around; }
-    .navegador__menu li {
-      transition: 0.4s; }
-      .navegador__menu li:hover {
-        transform: scale(1.2);
-        background: #daf376; }
-    .navegador__menu--responsive {
-      display: none; }
-      .navegador__menu--responsive li:hover {
-        background-color: #6a7a2a44; }
-
-/* NAVEGADOR RESPONSIVE*/
-.fa-bars {
-  display: none; }
+/* MAIN */
+.main {
+  grid-area: main;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .main__seccion {
+    display: flex; }
+  .main__img--left {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-right: 4rem; }
+  .main__seccion img {
+    border: 10px;
+    /*border-color: red;*/
+    padding: 0; }
+  .main__img--right {
+    margin-left: 4rem;
+    right: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem; }
+  .main p {
+    text-align: justify;
+    text-overflow: inherit; }
 
 /*   FOOTER                                                    */
 .footer {
@@ -249,11 +159,157 @@ main p {
     width: auto;
     background-color: #a8ca7411; }
 
-a img {
-  transition: 1s; }
+/*-------------------------------- NAVEGADOR ----------------------------------- */
+.navegador {
+  grid-area: navegador;
+  border: #a7ca74;
+  background-color: gray; }
+  .navegador a {
+    text-decoration: none; }
+    .navegador a:visited {
+      color: #d9e2ca; }
+    .navegador a:hover {
+      color: green; }
+    .navegador a:active {
+      color: black; }
+    .navegador a:link {
+      color: #d9e2ca; }
+  .navegador__menu {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around; }
+    .navegador__menu li {
+      transition: 0.4s; }
+      .navegador__menu li:hover {
+        transform: scale(1.2);
+        background: #daf376; }
+    .navegador__menu--responsive {
+      display: none; }
+      .navegador__menu--responsive li:hover {
+        background-color: #6a7a2a44; }
 
-a p {
-  transition: 1s; }
+/* NAVEGADOR RESPONSIVE*/
+.fa-bars {
+  display: none; }
+
+/* PRUEBA LISTA ICONOS REDES */
+.redes {
+  margin-top: 1em;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 1em;
+  transition: 1s;
+  display: flex;
+  justify-content: end; }
+  .redes--facebook {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s; }
+  .redes--github {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s; }
+  .redes--instagram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s; }
+  .redes--pinterest {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s; }
+  .redes div .redes--icono2 {
+    display: none; }
+  .redes div:hover .redes--img {
+    display: none; }
+  .redes div:hover .redes--icono2 {
+    display: block; }
+  .redes:hover .redes--facebook {
+    opacity: 1;
+    transform: translate(10.5em); }
+  .redes:hover .redes--github {
+    opacity: 1;
+    transform: translate(7em); }
+  .redes:hover .redes--instagram {
+    opacity: 1;
+    transform: translate(3.5em); }
+  .redes:hover .redes--pinterest {
+    opacity: 1;
+    transform: translate(0em); }
+  .redes:hover {
+    width: 17em; }
+
+/* FIN PRUEBA LISTA ICONOS REDES */
+/* chat__whatsapp -------------------------------------*/
+.chat__whatsapp {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 0.5rem;
+  transition: 0.5s; }
+  .chat__whatsapp:hover {
+    transform: scale(1.5); }
+
+/* FIN chat__whatsapp -------------------------------------*/
+/* LOGO e  ICONOS*/
+/*Iconos del Footer*/
+.ico {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 100%; }
+  .ico--header {
+    width: 2rem;
+    height: 2rem;
+    margin: 1.2rem 1.2rem 4rem;
+    border-radius: 100%;
+    transition: 0.5s; }
+    .ico--header:hover {
+      scale: 1.3; }
+  .ico--search {
+    top: 9.3em;
+    width: 1.1em;
+    height: 1.1em;
+    right: 1em;
+    position: absolute; }
+
+.ico3 {
+  margin-left: 0.8rem; }
+
+.novedades {
+  background-color: #263b26;
+  font-size: 0.8rem;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  color: #a7ca74;
+  width: 100vw; }
+
+.logo {
+  margin: 0.8rem;
+  height: 8em;
+  width: 8em;
+  border-radius: 100%; }
+
+.titulo--logo {
+  font-size: 3rem;
+  color: #6a7a2a;
+  margin-top: 0.6em; }
+
+.subtitulo--logo {
+  font-size: 2rem;
+  color: #545454;
+  transform: translateX(0.8em); }
 
 /*-------------------------SECCION HTMLs-----------------------------*/
 /* PRODUCTO.HTML */
@@ -268,7 +324,6 @@ a p {
   margin: 2rem;
   width: 17rem;
   height: 30rem;
-  background-color: qua;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
@@ -295,19 +350,6 @@ h4 {
   .img__producto:hover {
     scale: 1.1; }
 
-/* chat__whatsapp -------------------------------------*/
-.chat__whatsapp {
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  right: 2rem;
-  bottom: 2rem;
-  border-radius: 0.5rem;
-  transition: 0.5s; }
-  .chat__whatsapp:hover {
-    transform: scale(1.5); }
-
-/* FIN chat__whatsapp -------------------------------------*/
 .titulo {
   color: #617026;
   text-align: center;
@@ -384,7 +426,7 @@ h4 {
   /* Coloco  important para no tener que bajar esta sentencia y asi mantener ordenado el css*/
   margin: 0.5em !important; }
 
-/* FIN UNETE A NOSOTRO -------------------------------------*/
+/* FIN UNETE A NOSOTROS -------------------------------------*/
 /* QUIENES SOMOS -------------------------------------*/
 .articulo__quienesSomos {
   margin-top: 1%;
@@ -508,10 +550,7 @@ h4 {
     right: 0;
     text-align: right; }
   .novedades {
-    display: none;}
-  .novedades>img{
-    width: 8px;
-  }
+    display: none; }
   .header__columna1 {
     width: 7em; }
   .header__columna2 {
