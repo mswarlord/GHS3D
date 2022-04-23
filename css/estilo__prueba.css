@@ -1,289 +1,167 @@
-
-  /* FIN PRUEBA LISTA ICONOS REDES */
-/*.contenedor__prueba{
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    justify-content: end;
-}
-.redes {
-  margin-top: 1em;
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    right: 1em;
-    transition: 1s;
-    display: flex;
-    justify-content: end;
-}
-
-  .redes--facebook {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 1s; }
-  .redes--github {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 1s; }
-  .redes--instagram {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 1s;}
-  .redes--pinterest {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 1s;}  
-    
-    .redes div .redes--icono2{
-      display: none; }
-    .redes div:hover .redes--img{
-      display: none;}
-    .redes div:hover .redes--icono2{
-      display: block;}
-    .redes:hover .redes--facebook{
-        opacity: 1; 
-        transform: translate(10.5em)}
-    .redes:hover .redes--github{
-        opacity: 1; 
-        transform: translate(7em);}
-    .redes:hover .redes--instagram {
-        opacity: 1; 
-        transform: translate(3.5em);}
-    .redes:hover .redes--pinterest {
-        opacity: 1; 
-        transform: translate(0em);}
-  .redes:hover{
-    width:17em;}
-  */
-  /* FIN PRUEBA LISTA ICONOS REDES */
-
-  /* NOTICIAS --------------------------------------------------*/
-
-  /*.main--noticias {
-  margin: 2em 2em;
-  padding: 0;
-}
-.grid--noticias {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3em;
-  grid-template-areas: "columna1 columna2 columna3";
-}
-.columna1 {
-  grid-area: columna1;
-}
-.columna2 {
-  grid-area: columna2;
-}
-.columna3 {
-  grid-area: columna3;
-}
-.imagen--noticia {
-  width: 100%;
-  margin-bottom: 1em;
-}
-.noticia {
-  background-color: $color-primario--alfa;
-  margin-bottom: 3em;
-}
-.resumen--noticia {
-  padding: 0.5em;
-}
-
-/*
-
-  /* VER CARRITO -------------------------------------*/
-  /*
-  .grid__carrito {
-    display: grid;
-    grid-template-rows: 1em auto auto;
-    grid-template-columns: repeat(5, auto);
-    grid-template-areas: "fila1      fila1       fila1       fila1       resumen" "articulo1  articulo1   articulo1   articulo1   resumen" "articulo2  articulo2   articulo2   articulo2   resumen";
-    gap: 1em;
-    margin: 1em;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  .fila--superior {
-    grid-area: fila1;
-    background-color: $color-primario;
-    display: flex;
-    justify-content: space-around;
-  }
-  .articulo1 {
-    grid-area: articulo1;
-    background-color: $color-primario--alfa;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .articulo2 {
-    grid-area: articulo2;
-    background-color: $color-primario--alfa;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .resumen {
-    grid-area: resumen;
-    background-color: lightgray;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    h4 {
-      text-align: left;
-    }
-  }
-  
-  .articulo__thumbnail {
-    width: 5em;
-    height: 5em;
-  }
-  
-  .cupon {
-    background-color: #545454;
-    padding: 0.2em 0.3em 0.2em 0.3em;
-    color: #ac5;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    align-self: center;
-    margin: 1em 0 1em 0;
-  }
-  .button {
-    text-align: center;
-    display: inline-block;
-    font-size: 1em;
-    padding: 1em 2em;
-    margin: 0.25em 0.125em;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid $color-primario;
-    margin-top: 0.5em;
-    &:hover {
-        background-color: $color-primario;
-        color: white;}
-    &--finalizar {
-        width: 90%;
-        align-self: center;}
-    }*/
-/* ---------- FIN VER CARRITO ---------- */
-
-/* ---------- QUIENES SOMOS ---------- */
-/*
-.articulo__quienesSomos {
-  margin-top: 1%;
-  margin-left: 5%;
-  width: 90%;
-  &--integrante {
-  display: flex;
-  }
-}
-.imagen__quienesSomos {
-  width: 100%;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.imagen--integrante {
-  width: 200%;
-  height: 200%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 0rem 1rem 0rem 1rem;
-}
-/* ---------- FIN QUIENES SOMOS ---------- */
- /* SECCION PRODUCTO.HTML */
-/*
-.producto {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 0;
-}
-.contenedor__producto {
-  margin: 2rem;
-  width: 17rem;
-  height: 30rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  &--img {
-      width: 18rem;
-      height: 18rem;
-      margin: 0rem;
-      border-radius: 100%;
-      display: flex;
-      overflow: hidden;}
-}
-h4 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  color: rgb(32, 75, 32);
-  text-transform: uppercase;
-  text-align: center;
-}
-.img__producto {
-  width: 17rem;
-  height: 17rem;
-  border-radius: 100%;
-  transition: 0.5s;
-  &:hover {
-  scale: 1.1;}
-}
-.titulo {
-  color: rgb(97, 112, 38);
-  text-align: center;
-  font-size: 2em;
-  font-family: $fuente-secundaria;
-  text-transform: uppercase;
-}
-.subtitulo {
-  color: $color-secundario;
-  font-size: 1.5em;
-  font-family: $fuente-secundaria;
-}
-/* FIN SECCION PRODUCTO.HTML */
-/* UNETE A NOSOTROs -----------------------------------------*/
-/*
-.encabezado--formulario {
-  margin-top: 2rem;
-}
-.main--formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 10%;
-}
-.formulario {
-  margin-top: 2em;
-  height: 100%;
-  width: 20em;
-  background-color: rgba(106, 122, 42, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.botonera {
-  width: 30%;
-  display: flex;
+/*PRUEBAS  */
+*{
+  padding: 0em;
   margin: 0;
-  padding: 0;
-  justify-content: space-evenly;
+  box-sizing: border-box;
+}/*
+body{
+  background-color: black;
+}*/
+.producto__tarjeta{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(235deg, rgba(41,41,41,1) 0%, rgba(56,56,56,1) 47%, rgba(79,79,79,1) 100%);   width: 15em;
+  height: 20em;
+  width: 15em;
+  border-radius: 0.5em;
+  color: aliceblue;
+  font-size: smaller;
+  position: relative;
+  transition: 0.2s;
+  border: 0px;
+  box-shadow: 0.4em 0.2em 1em #11111188;
 }
-.button--formulario {
-  padding: 0 !important;
-  margin: 0.5em !important; // Coloco  important para no tener que bajar esta sentencia y asi mantener ordenado el css
+.producto__tarjeta:hover{
+  margin-top: 0.8em;
+  background: linear-gradient(235deg, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 47%, rgba(68,68,68,1) 100%);
+  box-shadow: -0.4em -0.2em 1em #11111188;
 }
 
-/* FIN UNETE A NOSOTROS -------------------------------------*/
+.producto__tarjeta--imagen img{
+  width: 15em;
+  height:20em;
+  border-radius: 0.5em;
+}
+
+.producto__tarjeta--detalle{
+  position: absolute;
+  background-color: #111111ef;
+  bottom: 0;
+  height: 50%;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+/*LOGO*/
+
+.logo{
+  position: relative;
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+  background-color: #002200;
+  overflow: hidden;
+}
+.circulo1{
+  position: absolute;
+  background-color: #113311;
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+  left:5%;
+  top: 5%;
+  transition: ease-in-out 1s;
+}
+.circulo2{
+  position: absolute;
+  background-color: #224422;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  left:10%;
+  top: 10%;
+  transition: ease-in-out 1s;
+}
+.circulo3{
+  position: absolute;
+  background-color: #335533;
+  width: 70%;
+  height: 70%;
+  border-radius: 100%;
+  left:15%;
+  top: 15%;
+  transition: ease-in-out 1s;
+}
+.circulo4{
+  position: absolute;
+  background-color: #446644;
+  width: 60%;
+  height: 60%;
+  border-radius: 100%;
+  left:20%;
+  top: 20%;
+  transition: ease-in-out 1s;
+}
+.circulo5{
+  position: absolute;
+  background-color: #557755;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  left:25%;
+  top: 25%;
+  transition: ease-in-out 1s;
+}
+.circulo6{
+  position: absolute;
+  background-color: #668866;
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  left:30%;
+  top: 30%;
+  transition: ease-in-out 1s;
+}
+.circulo7{
+  position: absolute;
+  background-color: #779977;
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  left:35%;
+  top: 35%;
+  transition: ease-in-out 1s;
+}
+.circulo8{
+  position: absolute;
+  background-color: #88aa88;
+  width: 20%;
+  height: 20%;
+  border-radius: 100%;
+  left: 40%;
+  top: 40%;
+  transition: ease-in-out 1s;
+}
+.circulo9{
+  position: absolute;
+  background-color: #99bb99;
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
+  left: 45%;
+  top: 45%;
+  transition: ease-in-out 1s;
+}
+.circulo10{
+  position: absolute;
+  background-color: #aaccaa;
+  width: 1%;
+  height: 1%;
+  border-radius: 100%;
+  left: 49.5%;
+  top: 49.5%;
+  transition: ease-in-out 1s;
+}
+
+.logo:hover div{
+width: 90%;
+height: 90%;
+top:5%;
+left:5%;
+}
+/*FIN LOGO*/
+
+
+
+
+/* FIN PRUEBAS */

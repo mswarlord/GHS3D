@@ -1,11 +1,13 @@
 @import 'utilities/variables';
 @import 'base/reset';
+@import 'utilities/mixins';
 /*----------SECCION LAYOUT ----------*/
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
 /*----------SECCION ELEMENTOS ----------*/
+@import 'components/logo';
 @import 'components/nav';
 @import 'components/redes';
 @import 'components/whatsapp';
