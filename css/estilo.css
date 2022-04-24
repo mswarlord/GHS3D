@@ -315,7 +315,8 @@ body {
   top: 49.5%;
   position: absolute;
   border-radius: 100%;
-  transition: ease-in-out 1s; }
+  transition: ease-in-out 1s;
+  overflow: hidden; }
 
 .logo--css:hover div {
   width: 90%;

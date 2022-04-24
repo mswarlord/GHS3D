@@ -86,6 +86,7 @@
     left: 49.5%;
     top: 49.5%;
     @include logo--circulo;
+    overflow: hidden;
 }
 .logo--css:hover div{
     width: 90%;
