@@ -3,10 +3,62 @@
   padding: 0em;
   margin: 0;
   box-sizing: border-box;
-}/*
+}
+
 body{
-  background-color: black;
-}*/
+background-image: url(../assets/img/background/background--14.jpg);
+background-attachment: fixed;
+}
+/* SECCIONES */
+.seccion{
+  height: 100%;
+  width: 100%;
+}
+.seccion__header{
+  width: 100%;
+  height: 100vh;
+  background-color: #226622fa;
+  padding: 5%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.seccion__productos{
+  width: 100%;
+  height: 100vh;
+  padding: 5%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.seccion__productos h4{
+  color: aliceblue;
+  font-family: 'Montserrat', monospace;
+  font-size: 2em;
+  font-weight:lighter;
+}
+.seccion__noticias{
+  width: 100%;
+  height: 80vh;
+}
+.seccion__quienesSomos{
+  width: 100%;
+  height: 100vh;
+  background-color: #338866;
+}
+.seccion__unete{
+  width: 100%;
+  height: 80vh;
+}
+
+
+/*FIN SECCIONES*/
+
+
+
+/* TARJETAS */
 .producto__tarjeta{
   margin: 1em;
   display: flex;
@@ -27,141 +79,33 @@ body{
   background: linear-gradient(235deg, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 47%, rgba(68,68,68,1) 100%);
   box-shadow: -0.4em -0.2em 1em #11111188;
 }
-
 .producto__tarjeta--imagen img{
   width: 15em;
   height:20em;
   border-radius: 0.5em;
 }
-
 .producto__tarjeta--detalle{
   position: absolute;
   background-color: #111111ef;
+  padding: .5em;
+  width: 100%;
   bottom: 0;
   height: 50%;
   border-radius: 0 0 0.5em 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.producto__tarjeta--detalle p:last-child{
+color: #00cc00;
 }
 
-/*LOGO*/
-
-.logo{
-  position: relative;
-  width: 10em;
-  height: 10em;
-  border-radius: 100%;
-  background-color: #002200;
-  overflow: hidden;
+.contenedor__tarjetas{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 11em 1.3em auto 10em;
+  grid-template-areas: 'col1 col2 col3 col4 col5 col6 col7 col8 col9 col10 col11 col12';
 }
-.circulo1{
-  position: absolute;
-  background-color: #113311;
-  width: 90%;
-  height: 90%;
-  border-radius: 100%;
-  left:5%;
-  top: 5%;
-  transition: ease-in-out 1s;
-}
-.circulo2{
-  position: absolute;
-  background-color: #224422;
-  width: 80%;
-  height: 80%;
-  border-radius: 100%;
-  left:10%;
-  top: 10%;
-  transition: ease-in-out 1s;
-}
-.circulo3{
-  position: absolute;
-  background-color: #335533;
-  width: 70%;
-  height: 70%;
-  border-radius: 100%;
-  left:15%;
-  top: 15%;
-  transition: ease-in-out 1s;
-}
-.circulo4{
-  position: absolute;
-  background-color: #446644;
-  width: 60%;
-  height: 60%;
-  border-radius: 100%;
-  left:20%;
-  top: 20%;
-  transition: ease-in-out 1s;
-}
-.circulo5{
-  position: absolute;
-  background-color: #557755;
-  width: 50%;
-  height: 50%;
-  border-radius: 100%;
-  left:25%;
-  top: 25%;
-  transition: ease-in-out 1s;
-}
-.circulo6{
-  position: absolute;
-  background-color: #668866;
-  width: 40%;
-  height: 40%;
-  border-radius: 100%;
-  left:30%;
-  top: 30%;
-  transition: ease-in-out 1s;
-}
-.circulo7{
-  position: absolute;
-  background-color: #779977;
-  width: 30%;
-  height: 30%;
-  border-radius: 100%;
-  left:35%;
-  top: 35%;
-  transition: ease-in-out 1s;
-}
-.circulo8{
-  position: absolute;
-  background-color: #88aa88;
-  width: 20%;
-  height: 20%;
-  border-radius: 100%;
-  left: 40%;
-  top: 40%;
-  transition: ease-in-out 1s;
-}
-.circulo9{
-  position: absolute;
-  background-color: #99bb99;
-  width: 10%;
-  height: 10%;
-  border-radius: 100%;
-  left: 45%;
-  top: 45%;
-  transition: ease-in-out 1s;
-}
-.circulo10{
-  position: absolute;
-  background-color: #aaccaa;
-  width: 1%;
-  height: 1%;
-  border-radius: 100%;
-  left: 49.5%;
-  top: 49.5%;
-  transition: ease-in-out 1s;
-}
-
-.logo:hover div{
-width: 90%;
-height: 90%;
-top:5%;
-left:5%;
-}
-/*FIN LOGO*/
-
-
-
+/* FIN TARJETAS */
 
 /* FIN PRUEBAS */

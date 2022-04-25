@@ -13,6 +13,8 @@ html {
 body {
     font-family: $fuente-primaria;
     background-color: $color-background;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100%;
 }
 

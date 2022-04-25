@@ -80,13 +80,12 @@
     @include logo--circulo;
 }
 .circulo10{
-    background-color: #aaccaa;
-    width: 1%;
-    height: 1%;
+    background-color: black;
+    width: 0%;
+    height: 0%;
     left: 49.5%;
     top: 49.5%;
     @include logo--circulo;
-    overflow: hidden;
 }
 .logo--css:hover div{
     width: 90%;
